@@ -96,6 +96,7 @@
     margin-bottom: 15px
 
 .product-description__title
+    cursor: pointer
     margin: 0
     margin-bottom: 5px
     text-align: center
@@ -134,6 +135,30 @@
 
     &:hover
         box-shadow: inset 1px 1px 3px rgba(#000, .4)
+
+.product-description__form
+    display: flex
+    flex-direction: column
+
+.product-description__input
+    border: 1px solid #777
+    display: inline-block
+    padding: 5px
+    border-radius: 5px
+
+    &:focus
+        outline: none
+        border-color: #d00
+
+.product-description__button
+    margin-top: 5px
+    cursor: pointer
+    border-radius: 5px
+    border: none
+    padding: 5px 10px
+    background-color: #333
+    color: #fff
+    align-self: center
 
 .catalog_table
     .catalog-caption
