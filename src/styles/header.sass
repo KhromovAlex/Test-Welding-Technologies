@@ -1,0 +1,75 @@
+.header
+    height: 70px
+    position: relative
+    margin-bottom: 20px
+    
+.nav
+    height: 100%
+    width: 70px
+    position: relative
+    cursor: pointer
+
+    &:hover
+        .menu
+            display: block
+            opacity: 1
+
+#table-catalog
+    width: 70px
+    height: 100%
+    cursor: pointer
+    position: absolute
+    top: 0
+    right: 0
+
+.menu
+    display: none
+    position: absolute
+    background-color: #fff
+    padding: 0
+    top: 100%
+    left: 10px
+    opacity: 0
+    border: 1px solid #000
+    border-radius: 5px
+    z-index: 100
+    transition: opacity .3s
+
+.menu__link, .menu-1-level__link, .menu-2-level__link, .menu-3-level__link, .menu-4-level__link
+    display: block
+    padding: 10px
+    text-decoration: none
+    color: #333
+    transition: .3s
+
+    &:hover
+        text-decoration: underline
+        color: #ffad00
+
+.menu-1-level__link
+    padding-left: 20px
+
+.menu-1-level, .menu-2-level, .menu-3-level, .menu-4-level
+    padding-left: 20px
+    min-width: max-content
+
+.menu-1-level__item
+    display: block
+    position: relative
+
+    &:hover
+        .menu-2-level
+            opacity: 1
+            display: block
+
+.menu-2-level
+    position: absolute
+    display: none
+    top: 0
+    background-color: #fff
+    left: 100%
+    padding: 0
+    opacity: 0
+    border: 1px solid #000
+    border-radius: 5px
+    transition: opacity .3s
